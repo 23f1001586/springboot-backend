@@ -4,6 +4,8 @@ import com.zenbuy.model.Coupon;
 import com.zenbuy.repository.CouponRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.context.annotation.Profile;
+
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -14,6 +16,8 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/coupons")
 @CrossOrigin(origins = "*")
+@Profile("dev")
+
 public class CouponController {
 
     private final CouponRepository couponRepository;
