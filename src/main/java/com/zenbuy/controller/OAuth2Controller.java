@@ -1,6 +1,7 @@
 package com.zenbuy.controller;
 
 import com.zenbuy.model.User;
+import org.springframework.context.annotation.Profile;
 import com.zenbuy.repository.UserRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -14,6 +15,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/oauth2")
 @CrossOrigin(origins = "*")
+@Profile("dev")
 public class OAuth2Controller {
 
     private final UserRepository userRepository;
