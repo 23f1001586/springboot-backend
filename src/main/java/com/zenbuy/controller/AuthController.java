@@ -1,5 +1,5 @@
 package com.zenbuy.controller;
-
+import org.springframework.context.annotation.Profile;
 import com.zenbuy.model.User;
 import com.zenbuy.service.UserService;
 import org.springframework.http.HttpStatus;
@@ -12,6 +12,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/auth")
 @CrossOrigin(origins = "*")
+@Profile("dev")
 public class AuthController {
 
     private final UserService userService;
