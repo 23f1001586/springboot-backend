@@ -3,10 +3,12 @@ package com.zenbuy.service;
 import com.zenbuy.model.Product;
 import com.zenbuy.repository.ProductRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.context.annotation.Profile;
 
 import java.util.List;
 
 @Service
+@Profile("dev")
 public class ProductService {
 
     private final ProductRepository repo;
