@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
+@Profile("oauth")
 public class OAuth2UserService extends DefaultOAuth2UserService {
 
     private final UserRepository userRepository;
