@@ -14,6 +14,7 @@ import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
+@Profile("oauth")
 public class OAuth2Config {
 
     private final OAuth2UserService oAuth2UserService;
