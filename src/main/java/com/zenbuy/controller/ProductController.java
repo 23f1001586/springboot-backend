@@ -4,12 +4,14 @@ import com.zenbuy.model.Product;
 import com.zenbuy.service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.context.annotation.Profile;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
 @CrossOrigin(origins = "*")
+@Profile("dev")
 public class ProductController {
 
     private final ProductService service;
