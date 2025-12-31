@@ -1,5 +1,6 @@
 package com.zenbuy.config;
 
+import org.springframework.context.annotation.Profile;
 import com.zenbuy.service.OAuth2UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
