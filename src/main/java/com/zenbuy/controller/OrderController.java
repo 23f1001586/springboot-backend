@@ -1,4 +1,6 @@
 package com.zenbuy.controller;
+import org.springframework.context.annotation.Profile;
+
 
 import com.zenbuy.model.Order;
 import com.zenbuy.service.OrderService;
@@ -13,6 +15,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/orders")
 @CrossOrigin(origins = "*")
+@Profile("dev")    
 public class OrderController {
 
     private final OrderService orderService;
