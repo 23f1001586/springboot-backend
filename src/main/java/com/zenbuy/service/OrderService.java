@@ -4,11 +4,14 @@ import com.zenbuy.model.*;
 import com.zenbuy.repository.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.context.annotation.Profile;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Profile("dev")   
 public class OrderService {
 
     private final OrderRepository orderRepository;
